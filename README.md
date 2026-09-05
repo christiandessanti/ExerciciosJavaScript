@@ -1,2 +1,2 @@
-# projeto-site
-Projeto de um site gerado no curso de Git e Github do Curso em Video
+# exercicios-js
+Repositório criado para armazenar os meus exercicios feitos nas aulas de JavaScript do Curso em Video!
