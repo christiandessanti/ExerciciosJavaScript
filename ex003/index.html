@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 3</title>
+    <style>
+        body {
+            font: normal 20px Arial;
+            text-align: center;
+            padding-top: 50px;
+            color: whitesmoke;
+            background-color: #2ba1a5;
+        }
+
+    </style>
+</head>
+<body>
+    <script>    
+        var nome = String(window.prompt("Qual é o seu nome?"));
+        document.write(`Olá, ${nome}! Seu nome tem ${nome.length} letras!`); //conta o número de caracteres na variavel
+        document.write("<br>");
+        document.write(`Seu nome em maiúsculas é: ${nome.toUpperCase()}`); //transforma a variável em maiúsculas
+        document.write("<br>");
+        document.write(`Seu nome em minúsculas é: ${nome.toLowerCase()}`); //transforma a variável em minúsculas
+    </script>
+</body>
+</html>

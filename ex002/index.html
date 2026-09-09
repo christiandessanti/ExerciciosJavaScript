@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiro JS</title>
+    <style>
+        body {
+            background-color: #2ba1a5;
+        }
+
+        h1 {
+            color: whitesmoke;     /* Cor do texto          */
+            text-align: center;      /* Centraliza o título   */
+            margin-top: 50px;        /* Espaçamento superior  */
+        }
+    </style>
+</head>
+<body>
+    <h1>Olá, Mundo!</h1>
+    <script>
+        var nome = String(window.prompt("Qual é o seu nome?")); //Armazena como string o valor digitado na variável nome
+
+        window.alert(`Olá, ${nome}!`); //Exibe o valor armazenado na variável nome concatenado com outras strings 
+      
+        var n1 = window.prompt("Digite um número: ");
+        var n2 = window.prompt("Digite outro número: ");
+        var soma = parseInt(n1) + parseInt(n2); //Transforma as variaveis respostas em números inteiros
+
+        window.alert('A soma dos valores é: ' + soma + '!'); 
+
+        var n1 = Number.parseFloat( //transforma a variável resposta em número real
+            window.prompt("Digite um número real: ").replace(",", ".") //substitui a vírgula por ponto para não dar erro na conversão
+        );
+
+        var n2 = Number(   //O sistema interpreta o valor digitado e realoca conforme necessário
+            window.prompt("Digite outro número real: ").replace(",", ".")
+        );
+
+        var somaReal = n1 + n2;
+
+        window.alert(`A soma entre ${n1} e ${n2} é: ${somaReal.toLocaleString("pt-BR")}!`); //para retornar o valor com virgula 
+    </script>
+</body>
+</html>
