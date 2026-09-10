@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM DOM DOM</title>
+    <style>
+        body{
+            background-color: #2ba1a5;
+            color: whitesmoke;
+            text-align: justify;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+        h1{
+            background-color: #a6b425;
+            margin-top: 50px;
+            padding: 20px;
+            font: normal 30px Times New Roman;
+        }
+    </style>
+</head>
+<body>
+    <h1>Iniciando os estudos com DOM</h1>
+    <p>Aqui vai o resultado </p>
+    <p>Apendendo a usar <strong>DOM</strong> em JavaScript</p>
+    <br>
+    <div id="msg">Clique em mim</div>
+    <br>
+
+    <script>
+        var corpo = window.document.body;
+        var p1 = window.document.getElementsByTagName("p")[1];
+        window.document.write('Está escrito assim: ' + p1.innerText);
+        corpo.style.backgroundColor = "gray";
+        p1.style.color = "yellow";
+        var d = document.getElementById("msg");
+        d.style.backgroundColor = "green";
+        d.innerText = 'Estou aguardando um futuro melhor';
+    </script>
+</body>
+</html>
