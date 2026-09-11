@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Somando Valores</title>
+    <style>
+        body{
+            background-color:  darkseagreen;
+        }
+        h1{
+            text-align: center;
+            background-color: cornflowerblue;
+            color: whitesmoke;
+            border-radius: 5px;
+        }
+        p{
+            text-align: center;
+        }
+        div{
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <h1>Super Calculadora 2026</h1>
+    <p> 
+        <input type="number" name="tn1" id="tn1"> +
+        <input type="number" name="tn2" id="tn2">
+        <input type="button" value="somar" onclick="somar()">
+    </p>
+    <div id="res"> Resultado: </div>
+    <script>
+        function somar(){
+            var tn1 = document.getElementById('tn1')
+            var tn2 = document.querySelector('input#tn2')
+            var res = document.getElementById('res')
+            var t1 = Number(tn1.value)
+            var t2 = Number(tn2.value)
+            var s = t1 + t2
+            res.innerHTML = `Resultado: A soma entre ${t1} e ${t2} é igual a ${s}`
+        }
+    </script>
+</body>
+</html>
