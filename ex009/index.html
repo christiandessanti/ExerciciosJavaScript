@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fui multado?</title>
+    <style>
+        body{
+            text-align: center;
+            color: whitesmoke;
+            background-color: rgb(68, 68, 161);
+        }
+
+        h1{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            background-color: rgb(90, 199, 163);
+            border-radius: 5px;
+        }
+
+        p{
+            font-size: 20px;
+        }
+
+        div{
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Descubra se você foi multado ou não!</h1>
+    <h2>Sistema de multas</h2>
+    <p>Velocidade do possante <input type="number" name="txtvel" id="txtvel"> Km/h.</p>
+    <p><input type="button" value="Verificar" id="Verificar" onclick="Calcular()"></p>
+    <div name="resposta" id="resposta"> </div>
+    <script>
+        function Calcular(){
+            var txtvel = document.getElementById('txtvel')
+            var resposta = document.getElementById('resposta')
+            var vel = Number(txtvel.value)
+
+            resposta.innerHTML = `<p>Sua velocidade atual é de <strong> ${vel} Km/h </strong></p>`
+
+            if(vel > 60){
+                resposta.innerHTML += `Você foi <strong>multado</strong> por excesso de velocidade`
+            }
+            resposta.innerHTML += `<p>Dirija sempre com cinto de segurança!</p>`
+        }
+    </script>
+</body>
+</html>
