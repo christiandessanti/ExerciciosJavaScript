@@ -8,4 +8,4 @@ while(contador <= 1){
 do {
     console.log('Salve, tropa')
     contador++
-} while (contador <= 6) // estrutura de repetiçaõ com teste lógico no final
+} while (contador <= 6) // estrutura de repetição com teste lógico no final
